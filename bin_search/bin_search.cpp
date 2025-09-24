@@ -14,11 +14,13 @@ int bin_search(int left, int right, int x, int arr[]) {
 	return -1;
 }
 
+
+
 int main() {
-	int a[] = { 1,1,2,2,3,34,45,65,577,653,7809,1234567,765321};
+	int a[] = { 1,1,2,2,3,34,45,65,577,653,7809,1234567,7654321};
 	int lenght = sizeof(a) / sizeof(a[0]);
-	int num = 2;
-	printf("num index: %d", bin_search(0, lenght, num, a));
+	int num = 7654321;
+	printf("num index: %d", bin_search(0, lenght-1, num, a));
 
 	return 0;
 }
